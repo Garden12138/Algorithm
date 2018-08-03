@@ -2,6 +2,8 @@ package com.garden.test;
 
 import java.util.Scanner;
 
+import com.garden.sort.Selection;
+
 /**
  * 排序算法测试类
  * @author Garden
@@ -9,17 +11,17 @@ import java.util.Scanner;
  */
 public class SortTest {
 	
-	private static int[] getNumberInput(){
+	private static Integer[] getNumberInput(){
 		Scanner in = new Scanner(System.in);
 		String strArr[] = in.nextLine().split(",");
-		int intArr[] = new int[strArr.length];
+		Integer[] intArr = new Integer[strArr.length];
 		for(int i = 0; i < strArr.length; i++){
-			intArr[i] = Integer.parseInt(strArr[i]);
+			intArr[i] = Integer.valueOf((strArr[i]));
 		}
 		return intArr;
 	}
 	
-	private static void output(int[] intArr){
+	private static void output(Integer[] intArr){
 		for(int i = 0; i < intArr.length; i++){
 			if(i == intArr.length - 1){
 				System.out.println(intArr[i]);
@@ -31,8 +33,10 @@ public class SortTest {
 	
 	public static void main(String[] args){
 		//以"4,3,2,1"格式输入
-		int[] intArr = getNumberInput();
+		Integer[] intArr = getNumberInput();
 		//排序算法...
+		Selection selection = new Selection();
+		selection.sort(intArr);
 		
 		//以"1,2,3,4"格式输出
 		output(intArr);
