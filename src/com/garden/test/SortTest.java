@@ -5,6 +5,7 @@ import java.util.Scanner;
 import com.garden.sort.Bubble;
 import com.garden.sort.Insertion;
 import com.garden.sort.Selection;
+import com.garden.sort.Shell;
 
 /**
  * 排序算法测试类
@@ -47,8 +48,12 @@ public class SortTest {
 //		bubble.sort(intArr);
 		
 		//插入排序
-		Insertion insertion = new Insertion();
-		insertion.sort(intArr);
+//		Insertion insertion = new Insertion();
+//		insertion.sort(intArr);
+		
+		//希尔排序
+		Shell shell = new Shell();
+		shell.sort(intArr);
 		
 		//以"1,2,3,4"格式输出
 		output(intArr);
