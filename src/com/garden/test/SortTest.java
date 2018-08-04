@@ -2,6 +2,7 @@ package com.garden.test;
 
 import java.util.Scanner;
 
+import com.garden.sort.Bubble;
 import com.garden.sort.Selection;
 
 /**
@@ -34,9 +35,14 @@ public class SortTest {
 	public static void main(String[] args){
 		//以"4,3,2,1"格式输入
 		Integer[] intArr = getNumberInput();
+		
 		//排序算法...
-		Selection selection = new Selection();
-		selection.sort(intArr);
+		//选择排序
+//		Selection selection = new Selection();
+//		selection.sort(intArr);
+		//冒泡算法
+		Bubble bubble = new Bubble();
+		bubble.sort(intArr);
 		
 		//以"1,2,3,4"格式输出
 		output(intArr);
