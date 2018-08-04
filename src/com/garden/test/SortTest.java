@@ -3,6 +3,7 @@ package com.garden.test;
 import java.util.Scanner;
 
 import com.garden.sort.Bubble;
+import com.garden.sort.Insertion;
 import com.garden.sort.Selection;
 
 /**
@@ -40,9 +41,14 @@ public class SortTest {
 		//选择排序
 //		Selection selection = new Selection();
 //		selection.sort(intArr);
+		
 		//冒泡算法
-		Bubble bubble = new Bubble();
-		bubble.sort(intArr);
+//		Bubble bubble = new Bubble();
+//		bubble.sort(intArr);
+		
+		//插入排序
+		Insertion insertion = new Insertion();
+		insertion.sort(intArr);
 		
 		//以"1,2,3,4"格式输出
 		output(intArr);
