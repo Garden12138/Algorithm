@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import com.garden.sort.Bubble;
 import com.garden.sort.Insertion;
+import com.garden.sort.QuickSort;
 import com.garden.sort.Selection;
 import com.garden.sort.Shell;
 
@@ -52,8 +53,11 @@ public class SortTest {
 //		insertion.sort(intArr);
 		
 		//希尔排序
-		Shell shell = new Shell();
-		shell.sort(intArr);
+//		Shell shell = new Shell();
+//		shell.sort(intArr);
+		
+		QuickSort quickSort = new QuickSort();
+		quickSort.sort(intArr);
 		
 		//以"1,2,3,4"格式输出
 		output(intArr);
