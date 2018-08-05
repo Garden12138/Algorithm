@@ -7,6 +7,7 @@ import com.garden.sort.Insertion;
 import com.garden.sort.QuickSort;
 import com.garden.sort.Selection;
 import com.garden.sort.Shell;
+import com.garden.sort.Up2DownMergeSort;
 
 /**
  * 排序算法测试类
@@ -56,8 +57,12 @@ public class SortTest {
 //		Shell shell = new Shell();
 //		shell.sort(intArr);
 		
-		QuickSort quickSort = new QuickSort();
-		quickSort.sort(intArr);
+		//快速排序
+//		QuickSort quickSort = new QuickSort();
+//		quickSort.sort(intArr);
+		
+		Up2DownMergeSort up2DownMergeSort = new Up2DownMergeSort();
+		up2DownMergeSort.sort(intArr);
 		
 		//以"1,2,3,4"格式输出
 		output(intArr);
